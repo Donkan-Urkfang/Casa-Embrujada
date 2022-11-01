@@ -3,7 +3,10 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Recoger
+  - Destruir
+  - Animar
   layers:
   - Default
   - TransparentFX
@@ -11,13 +14,13 @@ TagManager:
   - 
   - Water
   - UI
-  - Objetos
+  - Interactuable
+  - NoInteractuable
   - 
   - 
-  - 
-  - 
-  - 
-  - 
+  - Recoger
+  - Destruir
+  - Animar
   - 
   - 
   - 
