@@ -23,7 +23,19 @@ public class Interactuables : MonoBehaviour
                 }
                 break;
 
-            case "animar":
+            case "Animar":
+                Animator anim = go.GetComponent<Animator>();
+                anim.SetInteger("Activar", 1);
+                Debug.Log(anim);
+                break;
+            
+            case "Interactuar":
+                go.transform.GetComponent<AbrirPuerta>().Estado();
+                
+                break;
+
+            default:
+                Debug.Log("ERROR");
                 break;
         }  
     } 
