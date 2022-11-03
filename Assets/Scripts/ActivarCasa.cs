@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ActivarCasa : MonoBehaviour
 {
-    private bool casa;
+    /* private bool casa;
     private void OnTriggerEnter(Collider Player) {
         if (Player.CompareTag("Player")){
             casa = true;
@@ -13,5 +13,5 @@ public class ActivarCasa : MonoBehaviour
 
     private void Update() {
         
-    }
+    } */
 }
