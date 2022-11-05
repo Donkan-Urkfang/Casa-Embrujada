@@ -4,16 +4,17 @@ using UnityEngine;
 public class Interactuables : MonoBehaviour
 {
     // Carga el script del Jugador
-    public MoverObjetos script;
+    public Jugador script;
 
     // Metodo para comprobar que objeto es y su accion
     public void Usar() {
         GameObject go = this.gameObject;
         switch (go.tag){
             case "Recoger":
-                if (go.name == "Martillo"){
+                if (go.name == "Martillo" && script.casaActivada){
                     script.martillo = true;
                     Destroy(gameObject);
+                    Debug.Log("a");
                 }
                 if (go.name == "Llave" && script.martillo){
                     script.llaves += 1;
@@ -26,13 +27,7 @@ public class Interactuables : MonoBehaviour
                     Destroy(gameObject);
                 }
                 break;
-
-            case "Animar":
-                Animator anim = go.GetComponent<Animator>();
-                anim.SetInteger("Activar", 1);
-                Debug.Log(anim);
-                break;
-            
+                
             case "Interactuar":
                 go.transform.GetComponent<AbrirPuerta>().Estado();
                 break;
@@ -42,10 +37,19 @@ public class Interactuables : MonoBehaviour
                     go.transform.GetComponent<AbrirPuerta>().Estado();
                 }
                 break;
-
+                
+            case "Trigger":
+                if (go.name == "Comienza") {
+                    script.casaActivada = true;
+                    script.llaves = 0;
+                    go.transform.GetComponent<ActivarCasa>().Activar();
+                }
+                break;
+                
             default:
                 Debug.Log("ERROR");
                 break;
-        }  
+        }
+        
     } 
 }

@@ -699,7 +699,6 @@ GameObject:
   - component: {fileID: 3922220774215470761}
   - component: {fileID: 3922220774215470760}
   - component: {fileID: 3922220774215470802}
-  - component: {fileID: 3922220774215470803}
   - component: {fileID: 3922220774215470800}
   m_Layer: 0
   m_Name: Jugador
@@ -715,7 +714,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3922220774215470765}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 25.87, y: 1.1, z: 2.44}
   m_LocalScale: {x: 0.6, y: 0.8, z: 0.6}
   m_ConstrainProportionsScale: 0
@@ -837,22 +836,6 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
---- !u!114 &3922220774215470803
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3922220774215470765}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 263002b3debe20f44a58e8fe081512be, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  martillo: 0
-  llaves: 0
-  camara: {fileID: 3922220774274673678}
-  distanciaRaycast: 1.5
 --- !u!114 &3922220774215470800
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -865,7 +848,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d755af09af32547bcd385aedca538d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  martillo: 0
+  llaves: 4
+  cordura: 100
   enemigo: {fileID: 0}
+  camara: {fileID: 3922220774215470762}
+  distanciaRaycast: 2
 --- !u!1 &3922220774274673665
 GameObject:
   m_ObjectHideFlags: 0

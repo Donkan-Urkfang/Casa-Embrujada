@@ -3,7 +3,9 @@ guid: 50d755af09af32547bcd385aedca538d
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - enemigo: {instanceID: 0}
+  - camara: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

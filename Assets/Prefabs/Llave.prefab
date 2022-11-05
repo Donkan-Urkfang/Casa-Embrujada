@@ -11,8 +11,8 @@ GameObject:
   - component: {fileID: 5426274497859978241}
   - component: {fileID: 5426274497859978242}
   - component: {fileID: 5426274497859978243}
-  - component: {fileID: 5426274497859978240}
   - component: {fileID: 5426274497859978301}
+  - component: {fileID: 7736122855772987815}
   m_Layer: 6
   m_Name: Llave
   m_TagString: Recoger
@@ -85,19 +85,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &5426274497859978240
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5426274497859978246}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5426274497859978301
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -110,4 +97,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470803, guid: 8c864079c1b390540965abfecb266484, type: 3}
+--- !u!65 &7736122855772987815
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5426274497859978246}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1.6241586, z: 1.6866779}
+  m_Center: {x: 0, y: 0.3120792, z: -0.029788017}

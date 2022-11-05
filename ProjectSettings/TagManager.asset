@@ -9,6 +9,7 @@ TagManager:
   - Animar
   - Interactuar
   - PuertaPrincipal
+  - Trigger
   layers:
   - Default
   - TransparentFX

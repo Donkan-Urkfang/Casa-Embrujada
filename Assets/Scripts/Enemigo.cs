@@ -10,8 +10,7 @@ public class Enemigo : MonoBehaviour
         agent.SetDestination(posJugador.position);
     }
 
-    void Update()
-    {
+    private void FixedUpdate() {
         SeguirJugador();
     }
 
