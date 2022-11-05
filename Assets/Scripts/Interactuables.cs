@@ -15,6 +15,10 @@ public class Interactuables : MonoBehaviour
                     script.martillo = true;
                     Destroy(gameObject);
                 }
+                if (go.name == "Llave" && script.martillo){
+                    script.llaves += 1;
+                    Destroy(gameObject);
+                }
                 break;
 
             case "Destruir":
@@ -31,7 +35,12 @@ public class Interactuables : MonoBehaviour
             
             case "Interactuar":
                 go.transform.GetComponent<AbrirPuerta>().Estado();
-                
+                break;
+
+            case "PuertaPrincipal":
+                if (script.llaves == 4){
+                    go.transform.GetComponent<AbrirPuerta>().Estado();
+                }
                 break;
 
             default:

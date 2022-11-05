@@ -4,6 +4,7 @@ public class MoverObjetos : MonoBehaviour
 {
     // Variables de Objetos recogidos
     public bool martillo;
+    public int llaves;
 
     public Transform camara;
     public float distanciaRaycast;
@@ -22,10 +23,11 @@ public class MoverObjetos : MonoBehaviour
     void ObjetosRecogidos(string objeto){
         switch (objeto){
             case "Martillo":
-            martillo = true;
-            break;
-            case "Bola":
-            break;
+                martillo = true;
+                break;
+            case "Llave":
+                llaves = 4;
+                break;
         }
     }
 }

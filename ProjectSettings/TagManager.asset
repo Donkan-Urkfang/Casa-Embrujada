@@ -8,6 +8,7 @@ TagManager:
   - Destruir
   - Animar
   - Interactuar
+  - PuertaPrincipal
   layers:
   - Default
   - TransparentFX

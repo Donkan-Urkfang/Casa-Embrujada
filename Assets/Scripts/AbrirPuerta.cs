@@ -18,6 +18,7 @@ public class AbrirPuerta : MonoBehaviour
             transform.localRotation = Quaternion.Slerp(transform.localRotation, targetRotation2, relentizacion * Time.deltaTime);
         }
     }
+    
     public void Estado() {
         activar = !activar;
     }
