@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class AbrirPuerta : MonoBehaviour
 {
+    public ControlDeSonidos sounds;
     public float puertaAbiertaAngulo;
     public float puertaCerradaAngulo = 0.0f;
     public float relentizacion = 3.0f;
@@ -20,6 +21,7 @@ public class AbrirPuerta : MonoBehaviour
     }
     
     public void Estado() {
+        sounds.SFX_Sounds[2].Play();
         activar = !activar;
     }
 

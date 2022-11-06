@@ -5,6 +5,7 @@ public class Interactuables : MonoBehaviour
 {
     // Carga el script del Jugador
     public Jugador script;
+    public ControlDeSonidos sounds;
 
     // Metodo para comprobar que objeto es y su accion
     public void Usar() {
@@ -14,16 +15,11 @@ public class Interactuables : MonoBehaviour
                 if (go.name == "Martillo" && script.casaActivada){
                     script.martillo = true;
                     Destroy(gameObject);
-                    Debug.Log("a");
                 }
                 if (go.name == "Llave" && script.martillo){
                     script.llaves += 1;
-                    Destroy(gameObject);
-                }
-                break;
-
-            case "Destruir":
-                if (script.martillo) {
+                    sounds.SFX_Sounds[3].Play();
+                    sounds.SFX_Sounds[1].Play();
                     Destroy(gameObject);
                 }
                 break;
