@@ -19,7 +19,6 @@ public class Interactuables : MonoBehaviour
                 if (go.name == "Llave" && script.martillo){
                     script.llaves += 1;
                     sounds.SFX_Sounds[3].Play();
-                    sounds.SFX_Sounds[1].Play();
                     Destroy(gameObject);
                 }
                 break;
@@ -31,14 +30,6 @@ public class Interactuables : MonoBehaviour
             case "PuertaPrincipal":
                 if (script.llaves == 4){
                     go.transform.GetComponent<AbrirPuerta>().Estado();
-                }
-                break;
-                
-            case "Trigger":
-                if (go.name == "Comienza") {
-                    script.casaActivada = true;
-                    script.llaves = 0;
-                    go.transform.GetComponent<ActivarCasa>().Activar();
                 }
                 break;
                 

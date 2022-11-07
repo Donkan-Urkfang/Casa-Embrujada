@@ -6,10 +6,6 @@ public class ControlDeSonidos : MonoBehaviour
     public AudioSource []SFX_Sounds;
     public AudioSource []Amb_Sounds;
 
-    private void Start() {
-
-    }
-
     void ambiente(){
         if (script.adentroDeCasa){
             Amb_Sounds[0].volume = 0.3f;
@@ -19,7 +15,7 @@ public class ControlDeSonidos : MonoBehaviour
     }
     void respiracion(){
         if (script.casaActivada){
-            SFX_Sounds[0].volume = 0.7f;
+            SFX_Sounds[0].volume = 1f;
         }
     }
 

@@ -951,6 +951,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: -95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -967,7 +968,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444978211423631
 GameObject:
   m_ObjectHideFlags: 0
@@ -1818,6 +1820,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -1834,7 +1837,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444978570448461
 GameObject:
   m_ObjectHideFlags: 0
@@ -3716,6 +3720,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -3732,7 +3737,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444979255798749
 GameObject:
   m_ObjectHideFlags: 0
@@ -4013,6 +4019,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -4029,7 +4036,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444979420997919
 GameObject:
   m_ObjectHideFlags: 0
@@ -4322,7 +4330,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!114 &8387949981603069526
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4335,6 +4344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -5684,6 +5694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -5700,7 +5711,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444980466164343
 GameObject:
   m_ObjectHideFlags: 0
@@ -5779,6 +5791,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: -90
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -5795,7 +5808,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444980506401699
 GameObject:
   m_ObjectHideFlags: 0
@@ -5942,6 +5956,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: -95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -5958,7 +5973,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444980531537255
 GameObject:
   m_ObjectHideFlags: 0
@@ -8287,7 +8303,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!114 &8387949985081838816
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8300,6 +8317,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: -95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -9450,6 +9468,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -9466,7 +9485,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444981512971437
 GameObject:
   m_ObjectHideFlags: 0
@@ -9740,6 +9760,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: -95
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -9756,7 +9777,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444981768270525
 GameObject:
   m_ObjectHideFlags: 0
@@ -10455,6 +10477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c19336b3e82c2ed4880415f8fe5b61e0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sounds: {fileID: 4292282681558181742, guid: be927d9c1c79d7f49a213710b5dc7274, type: 3}
   puertaAbiertaAngulo: 90
   puertaCerradaAngulo: 0
   relentizacion: 3
@@ -10471,7 +10494,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 58a43b944f6ab8241b8a04fd8ab11723, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  script: {fileID: 0}
+  script: {fileID: 3922220774215470800, guid: 8c864079c1b390540965abfecb266484, type: 3}
+  sounds: {fileID: 0}
 --- !u!1 &8395444981952592871
 GameObject:
   m_ObjectHideFlags: 0

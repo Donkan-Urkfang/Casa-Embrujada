@@ -1,2 +1,16 @@
 # Casa Embrujada
- TP CH
+
+Te despiertas en frente de una casa sin saber el motivo, algo impide que te alejes de ella y solo queda entrar a inspeccionar. Logra tu objetivo y sal.
+
+# Mecanicas:
+
+-WASD: Movimiento.
+-Mouse: Camara.
+-Tecla E: Interactuar.
+
+# Victoria 
+
+-Consigue romper las 4 reliquias con el martillo.
+# Derrota 
+
+-Reduce tu cordura a 0.

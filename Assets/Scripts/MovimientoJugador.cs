@@ -1,10 +1,10 @@
 using UnityEngine;
-
 [RequireComponent(typeof(CharacterController))]
 public class MovimientoJugador : MonoBehaviour
 {
     public float movementSpeed;
     private CharacterController charController;
+    public Animator animacion;
 
 
     private void Awake()
@@ -15,6 +15,7 @@ public class MovimientoJugador : MonoBehaviour
     private void Update()
     {
         PlayerMovement();
+        Animaciones();
     }
 
     private void PlayerMovement()
@@ -27,4 +28,31 @@ public class MovimientoJugador : MonoBehaviour
 
         charController.SimpleMove(forwardMovement + rightMovement);
      }
+
+    private void Animaciones(){
+
+        if (Input.GetKey(KeyCode.W)){
+            animacion.SetBool("Avanzar", true);
+        } else {
+            animacion.SetBool("Avanzar", false);
+        }
+        
+        if (Input.GetKey(KeyCode.A)){
+            animacion.SetBool("Izquierda", true);
+        } else {
+            animacion.SetBool("Izquierda", false);
+        }
+        
+        if (Input.GetKey(KeyCode.D)){
+            animacion.SetBool("Derecha", true);
+        } else {
+            animacion.SetBool("Derecha", false);
+        }
+        
+        if (Input.GetKey(KeyCode.S)){
+            animacion.SetBool("Retroceder", true);
+        } else {
+            animacion.SetBool("Retroceder", false);
+        }
+    }
 }
