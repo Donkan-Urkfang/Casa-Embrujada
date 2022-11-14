@@ -9,6 +9,7 @@ TagManager:
   - Interactuar
   - PuertaPrincipal
   - Trigger
+  - Interruptor
   layers:
   - Default
   - TransparentFX

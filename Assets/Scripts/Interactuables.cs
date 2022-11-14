@@ -32,6 +32,38 @@ public class Interactuables : MonoBehaviour
                     go.transform.GetComponent<AbrirPuerta>().Estado();
                 }
                 break;
+
+            case "Interruptor":
+                if (go.name == "Sala") {
+                    sounds.SFX_Sounds[4].Play();
+                    if (script.lucesEstadoSala == false){
+                    script.lucesEstadoSala = true;
+                    } else {
+                        script.lucesEstadoSala = false;
+                    }
+                    script.EstadoLuces(go.name);
+                      
+                }
+                if (go.name == "Baño") {
+                    sounds.SFX_Sounds[4].Play();
+                    if (script.lucesEstadoBaño == false){
+                    script.lucesEstadoBaño = true;
+                    } else {
+                        script.lucesEstadoBaño = false;
+                    }
+                    script.EstadoLuces(go.name);
+                }
+                if (go.name == "Pieza") {
+                    sounds.SFX_Sounds[4].Play();
+                    if (script.lucesEstadoPieza == false){
+                    script.lucesEstadoPieza = true;
+                    } else {
+                        script.lucesEstadoPieza = false;
+                    }
+                    script.EstadoLuces(go.name);
+                }
+
+                break;
                 
             default:
                 Debug.Log("ERROR");

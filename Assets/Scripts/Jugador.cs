@@ -17,6 +17,9 @@ public class Jugador : MonoBehaviour
     private float parpadeo = 10f;
     private float IntencidadLinternaEstandar;
     private float IntencidadLucesEstandar;
+    public bool lucesEstadoSala;
+    public bool lucesEstadoBaño;
+    public bool lucesEstadoPieza;
     public GameObject []luces;
     public GameObject []puertaPrincipal;
     public GameObject enemigo;
@@ -30,6 +33,9 @@ public class Jugador : MonoBehaviour
         Cordura();
         Luces();
         Raycast();
+        if (Input.GetKeyDown(KeyCode.F)){
+            Debug.Log(lucesEstadoSala);
+        }
     }
 
     IEnumerator Parpadeo(int repeticiones)
@@ -40,11 +46,18 @@ public class Jugador : MonoBehaviour
             for (int x=0; x<luces.Length; x++)
             {
                 luces[x].GetComponentInChildren<Light>().intensity = Random.Range(0.1f, 4f);
+                if (luces[x].GetComponentInChildren<Light>().intensity > 0f) {
+                    luces[x].GetComponent<Renderer>().material.SetColor ("_Emission", Color.white);
+                } else {
+                    luces[x].GetComponent<Renderer>().material.SetColor ("_Emission", Color.black);
+                }
             }
         	yield return new WaitForSeconds(Random.Range(0.05f, 0.2f));
 		}
         gameObject.GetComponentInChildren<Light>().intensity = IntencidadLinternaEstandar;
-        luces[0].GetComponentInChildren<Light>().intensity = IntencidadLucesEstandar;
+        EstadoLuces("Sala");
+        EstadoLuces("Baño");
+        EstadoLuces("Pieza");
     }
 
     void DañoFantasma(){
@@ -63,17 +76,14 @@ public class Jugador : MonoBehaviour
             if (cordura>70f){
                 DañoFantasma();
                 IntencidadLinternaEstandar = 12f;
-                IntencidadLucesEstandar = 5f;
             } 
             else if (cordura>40f){
                 DañoFantasma();
                 IntencidadLinternaEstandar = 10f;
-                IntencidadLucesEstandar = 3f;
             } 
             else if (cordura>0f){
                 DañoFantasma();
                 IntencidadLinternaEstandar = 6f;
-                IntencidadLucesEstandar = 1f;
             } 
             else if (cordura<=0f){
                 Reset();
@@ -90,8 +100,44 @@ public class Jugador : MonoBehaviour
                 StartCoroutine(Parpadeo(10));
             }
         }
-        
-        
+    }
+
+    public void EstadoLuces(string lugar){
+        if (lucesEstadoSala){
+            for (int i = 5; i>-1; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 0f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.black);
+                } 
+        } else {
+            for (int i = 5; i>-1; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 5f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.white);
+            }
+        }
+
+        if (lucesEstadoBaño){
+            for (int i = 7; i>5; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 0f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.black);
+                } 
+        } else {
+            for (int i = 7; i>5; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 5f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.white);
+            }
+        }
+
+        if (lucesEstadoPieza){
+            for (int i = 9; i>7; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 0f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.black);
+                } 
+        } else {
+            for (int i = 9; i>7; i--) {
+                luces[i].GetComponentInChildren<Light>().intensity = 5f;
+                luces[i].GetComponent<Renderer>().material.SetColor ("_Emission", Color.white);
+            }
+        }
     }
 
     void Raycast(){
@@ -101,17 +147,6 @@ public class Jugador : MonoBehaviour
             if (Physics.Raycast(salidaDeRaycast.position, salidaDeRaycast.forward, out golpe, distanciaRaycast, LayerMask.GetMask("Interactuable"))) {
                 golpe.transform.GetComponent<Interactuables>().Usar();
             }
-        }
-    }
-
-    void ObjetosRecogidos(string objeto){
-        switch (objeto){
-            case "Martillo":
-                martillo = true;
-                break;
-            case "Llave":
-                llaves = 4;
-                break;
         }
     }
 
