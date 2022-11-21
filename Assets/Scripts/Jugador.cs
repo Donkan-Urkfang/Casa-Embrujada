@@ -8,9 +8,11 @@ public class Jugador : MonoBehaviour
     //Empieza el juego
     public bool casaActivada;
     public bool adentroDeCasa;
+
     // Variables de Objetos recogidos
     public bool martillo;
     public int llaves;
+    public int llavesTotales;
 
     public float cordura = 100f;
     public float distanciaRaycast;
@@ -20,6 +22,8 @@ public class Jugador : MonoBehaviour
     public bool lucesEstadoSala;
     public bool lucesEstadoBaño;
     public bool lucesEstadoPieza;
+    public HUD hudScript;
+    public GameObject hud;
     public GameObject []luces;
     public GameObject []puertaPrincipal;
     public GameObject enemigo;
@@ -33,9 +37,6 @@ public class Jugador : MonoBehaviour
         Cordura();
         Luces();
         Raycast();
-        if (Input.GetKeyDown(KeyCode.F)){
-            Debug.Log(lucesEstadoSala);
-        }
     }
 
     IEnumerator Parpadeo(int repeticiones)
@@ -62,13 +63,13 @@ public class Jugador : MonoBehaviour
 
     void DañoFantasma(){
                 if (Vector3.Distance(enemigo.transform.position, transform.position) < 1f) {
-                    cordura -= 1f * Time.deltaTime;
+                    cordura -= 2f * Time.deltaTime;
                 } 
                 else if (Vector3.Distance(enemigo.transform.position, transform.position) < 3f) {
-                    cordura -= 0.5f * Time.deltaTime;
+                    cordura -= 1f * Time.deltaTime;
                 } 
                 else if (Vector3.Distance(enemigo.transform.position, transform.position) < 7f) {
-                    cordura -= 0.25f * Time.deltaTime;
+                    cordura -= 0.5f * Time.deltaTime;
                 }
     }
     void Cordura(){
@@ -88,6 +89,7 @@ public class Jugador : MonoBehaviour
             else if (cordura<=0f){
                 Reset();
             }
+            hudScript.Cordura(cordura);
         }
     }
 
@@ -171,7 +173,9 @@ public class Jugador : MonoBehaviour
         for (int i=0; i<luces.Length; i++){
                 luces[i].GetComponentInChildren<Light>().color = new Color(0.8301f, 0.6453f, 0.6453f, 1f);
         }
+        hud.SetActive(true);
         llaves = 0;
+        llavesTotales = 4;
         luzSolar.GetComponentInChildren<Light>().color = new Color(0.6603f, 0.6254f, 0.6254f, 1f);
         puertaPrincipal[0].GetComponent<AbrirPuerta>().Estado();
         puertaPrincipal[1].GetComponent<AbrirPuerta>().Estado();
@@ -184,6 +188,7 @@ public class Jugador : MonoBehaviour
     }
 
     void DesactivarCasa(){
+        hud.SetActive(false);
         enemigo.SetActive(false);
         casaActivada = false;
         sounds.SFX_Sounds[0].Stop();
@@ -199,5 +204,9 @@ public class Jugador : MonoBehaviour
         if (cordura <= 0){
             SceneManager.LoadScene("House");
         }
+    }
+        
+    public void MenuPrincipal(){
+            SceneManager.LoadScene("Menu");
     }
 }
